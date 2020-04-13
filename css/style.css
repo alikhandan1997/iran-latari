@@ -156,6 +156,7 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .header_area {
+  direction: rtl;
   position: absolute;
   width: 100%;
   top: 0;
@@ -178,7 +179,7 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item .nav-link {
-  font: 600 12px/100px "Open Sans", sans-serif;
+  font: 600 16px/100px "Open Sans", sans-serif;
   text-transform: uppercase;
   color: #fff;
   padding: 0px;
@@ -287,7 +288,7 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item:last-child {
-  margin-right: 0px;
+  margin-right: 45px;
 }
 
 .header_area .navbar .search {
