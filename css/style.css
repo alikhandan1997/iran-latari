@@ -378,7 +378,7 @@ button:focus {
 .home_banner_area .banner_inner {
   overflow: hidden;
   width: 100%;
-  padding: 170px 0px 140px 0px;
+  padding: 15% 0px 15% 0px;
 }
 
 .home_banner_area .banner_inner .banner_content {
@@ -392,20 +392,22 @@ button:focus {
 }
 
 .home_banner_area .banner_inner .banner_content h2 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 15px;
   margin-top: -30px;
+  text-align: right;
 }
 
 .home_banner_area .banner_inner .banner_content p {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  max-width: 450px;
-  margin-bottom: 40px;
-  font-size: 14px;
+  font-weight: 400;
+  max-width: 80%;
+  margin-bottom: 30px;
+  font-size: 15px;
+  text-align: right;
 }
 
 .home_banner_area .banner_inner .banner_content .banner_map_img {
