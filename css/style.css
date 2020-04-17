@@ -175,8 +175,8 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item .nav-link {
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #fff;
   padding: 20px 0 0 0;
@@ -286,6 +286,12 @@ button:focus {
 
 .header_area .navbar .nav .nav-item:last-child {
   margin-right: 45px;
+}
+
+@media screen and (max-width:576px) {
+  .header_area .navbar .nav .nav-item:last-child {
+    margin-right: 0;
+  }
 }
 
 .header_area .navbar .search {

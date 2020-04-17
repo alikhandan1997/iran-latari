@@ -91,6 +91,7 @@
         display: block;
 		border-bottom: 1px solid #ededed33;
 		border-radius: 0px;
+		text-align: right;
     }
     .header_area .navbar .search{
         margin-left: 0px;
