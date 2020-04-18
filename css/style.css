@@ -194,6 +194,7 @@ button:focus {
   text-align: right;
   font-weight: normal;
   margin: auto;
+  margin-bottom: 20%;
 }
 
 .main_title.white h2 {
