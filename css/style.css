@@ -3526,7 +3526,6 @@ h6 {
 ============================================================================================ */
 .interior_area {
   background: #f9faff;
-  padding-top: 65px;
   padding-bottom: 65px;
 }
 
@@ -3544,12 +3543,15 @@ h6 {
   color: #222222;
   font-weight: 600;
   line-height: 45px;
-  font-size: 36px;
+  font-size: 50px;
+  margin-top: -40px;
   margin-bottom: 30px;
+  text-align: right;
 }
 
 .interior_inner .interior_text p {
   margin-bottom: 40px;
+  text-align: right;
 }
 
 /* End Feature Area css
