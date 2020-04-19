@@ -47,11 +47,37 @@ h2,h4,h5 {
   padding-bottom: 3%;
 }
 
-.home_banner_area .banner_inner .banner_content .banner_map_img {
-  text-align: right;
+@media screen and (max-width:768px) {
+  .home_banner_area .banner_inner .banner_content h2 {
+    font-size: 30px;
+  }
+  .home_banner_area .banner_inner .banner_content h4 {
+    font-size: 17px;
+  }
+  
+  .home_banner_area .banner_inner .banner_content h5 {
+    font-size: 15px;
+  }
 }
 
-.banner_map_img {
+.home_banner_area .banner_inner .banner_content .register {
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(64, 186, 202);
+  padding: 2% 5% 2% 5%;
+  margin-left: 40%;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.home_banner_area .banner_inner .banner_content .register:hover {
+  background-color: rgb(57, 57, 240);
+}
+
+.home_banner_area .banner_inner .banner_content .banner_map_img {
+  text-align: right;
   background-color: white;
   border-radius: 5%;
   margin-top: 5%;
