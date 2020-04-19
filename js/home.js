@@ -1,3 +1,3 @@
-function openPage(pageUrl){
-    window.open(pageUrl);
+function openPage(){
+    window.open("landing/landing.html", "_self");
 }
