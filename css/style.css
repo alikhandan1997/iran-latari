@@ -3609,6 +3609,12 @@ h6 {
   text-align: right;
 }
 
+@media screen and (max-width:768px) {
+  .interior_inner .interior_text h4 {
+    padding-top: 15%;
+  }
+}
+
 .interior_inner .interior_text p {
   margin-bottom: 40px;
   text-align: right;
