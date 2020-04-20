@@ -3618,6 +3618,8 @@ h6 {
 .interior_inner .interior_text p {
   margin-bottom: 40px;
   text-align: right;
+  font-size: 20px;
+  line-height: 35px;
 }
 
 /* End Feature Area css
