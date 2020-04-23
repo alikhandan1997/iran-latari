@@ -69,13 +69,15 @@
 
 })(jQuery);
 
-function loadDoc() {
-    var xhttp = new XMLHttpRequest();
+function submitForm(oFormElement)
+{
+    var xhr = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             console.log(this.responseText);
         }
     };
-    xhttp.open("POST", "http://iranlatari.com/api/captcha", true);
-    xhttp.send();
+    xhr.open("POST", "http://iranlatari.com/api/lottery/register", true);
+    xhr.send(new FormData(oFormElement));
+    return false;
 }
