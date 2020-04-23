@@ -1,5 +1,5 @@
 body {
-  font-family: "IranianSans";
+  font-family: "BKoodakBold";
   font-weight: 500;
   font-size: 14px;
   background: url(../images/home-banner.jpg);
@@ -80,13 +80,13 @@ h2,h4,h5 {
   text-align: right;
   background-color: white;
   border-radius: 5%;
-  margin: 10%;
+  margin-top: 10%;
 }
 
 @media screen and (max-width:576px) {
   .home_banner_area .banner_inner .banner_content .banner_map_img {
     width: 80%;
-    margin-right: 10%;
+    margin:10%;
   }
 }
 
