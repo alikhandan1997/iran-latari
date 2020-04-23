@@ -2,11 +2,11 @@
    #FONT
    ========================================================================== */
 .font-robo {
-  font-family: "BNazanin";
+  font-family: "BKoodakBold";
 }
 
 .font-poppins {
-  font-family: "BNazanin";
+  font-family: "BKoodakBold";
 }
 
 /* ==========================================================================
@@ -130,7 +130,7 @@ button {
 }
 
 body {
-  font-family: "BBadr", "BNazanin";
+  font-family: "BKoodakBold";
   font-weight: 500;
   font-size: 14px;
 }
@@ -235,7 +235,7 @@ h6 {
   display: inline-block;
   line-height: 40px;
   padding: 0 33px;
-  font-family: Poppins, "BNazanin";
+  font-family: Poppins, "BKoodakBold";
   cursor: pointer;
   color: #fff;
   -webkit-transition: all 0.4s ease;
