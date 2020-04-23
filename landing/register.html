@@ -30,14 +30,14 @@
     <link rel="stylesheet" href="css/fonts.min.css" />
 </head>
 
-<body>
+<body onload="loadDoc()">
     <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins" dir="rtl">
         <div class="wrapper wrapper--w780">
             <div class="card card-3">
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">فرم ثبت نام</h2>
-                    <form method="POST" action="controller.php">
+                    <form method="POST">
                         <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="نام و نام خانوادگی" name="name">
                         </div>
@@ -60,6 +60,7 @@
                         <div class="p-t-10">
                             <button class="btn btn--pill btn--green" type="submit">ثبت نام</button>
                         </div>
+                        <div id="demo"></div>
                     </form>
                 </div>
             </div>
