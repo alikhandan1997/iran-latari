@@ -4045,6 +4045,10 @@ h6 {
   font-size: 17px;
 }
 
+.footer-area .subscribe a {
+  color: white;
+}
+
 .footer-area .subscribe i {
   font-size: 30px;
   padding-left: 40px;
