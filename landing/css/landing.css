@@ -80,7 +80,14 @@ h2,h4,h5 {
   text-align: right;
   background-color: white;
   border-radius: 5%;
-  margin-top: 5%;
+  margin: 10%;
+}
+
+@media screen and (max-width:576px) {
+  .home_banner_area .banner_inner .banner_content .banner_map_img {
+    width: 80%;
+    margin-right: 10%;
+  }
 }
 
 .banner_map_img img{
