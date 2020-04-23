@@ -478,6 +478,14 @@ button:focus {
   width: 250px;
 }
 
+@media screen and (max-width:992px) {
+  .home_banner_area .banner_inner .banner_content .image-box img {
+    margin-left: 30%;
+    width: 300px;
+    height: 550px;
+  }
+}
+
 @media screen and (max-width:768px) {
   .home_banner_area .banner_inner .banner_content .image-box img {
     margin-left: 25%;
