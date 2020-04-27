@@ -17,7 +17,7 @@ h2,h4,h5 {
   overflow: hidden;
   width: 100%;
   height: auto;
-  padding: 70px 0px 87px 0px;
+  padding: 30px 0px 30px 0px;
 }
 
 .home_banner_area .banner_inner .banner_content {
@@ -60,27 +60,8 @@ h2,h4,h5 {
   }
 }
 
-.home_banner_area .banner_inner .banner_content .register {
-  border: none;
-  border-radius: 7px;
-  background-color: rgb(64, 186, 202);
-  padding: 2% 5% 2% 5%;
-  margin-left: 40%;
-  color: white;
-  font-size: 17px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.home_banner_area .banner_inner .banner_content .register:hover {
-  background-color: rgb(57, 57, 240);
-}
-
 .home_banner_area .banner_inner .banner_content .banner_map_img {
   text-align: right;
-  background-color: white;
-  border-radius: 5%;
-  margin-top: 10%;
 }
 
 @media screen and (max-width:576px) {
@@ -89,9 +70,3 @@ h2,h4,h5 {
     margin:10%;
   }
 }
-
-.banner_map_img img{
-  padding: 5%;
-}
-
-
