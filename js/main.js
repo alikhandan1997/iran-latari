@@ -1,9 +1,25 @@
+function onLoad() {
+    statusPage();
+    loadContest();
+}
+
+function statusPage() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "http://iranlatari.com/api/lottery/status/", true);
+    xhttp.onload = function() {
+        var data = JSON.parse(this.response);
+        if(data.result !== 'True') {
+            window.open("../home-page.html", "_self");
+        }
+    };
+    xhttp.send();
+}
+
 function loadContest() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "http://iranlatari.com/api/lottery/", true);
     xhttp.onload = function() {
         var data = JSON.parse(this.response);
-        console.log(data.result[0]);
         for(i=0; i<data.result.length;i++) {
             document.getElementById("js-element").innerHTML = `
             <div class="col-lg-4 col-sm-12 col-12">

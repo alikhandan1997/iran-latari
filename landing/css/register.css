@@ -577,6 +577,51 @@ input {
   font-size: 17px;
   padding: 5%;
 }
+.code-box {
+  display: none;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgb(207, 206, 206);
+  height: 300px;
+  margin-top: 10%;
+}
+
+.code-box .content-box .detail h4 {
+  text-align: center;
+  padding-top: 15%;
+}
+
+.code-box .content-box .code {
+  text-align: center;
+  margin-top: 15%;
+  padding-top: 3%;
+  font-size: 20px;
+  background-color: rgb(216, 215, 215);
+  border-radius: 7px;
+  width: 80%;
+  margin-right: 10%;
+  height: 40px;
+}
+
+.code-box .content-box .return-contest {
+  margin-top: 20%;
+  margin-right: 25%;
+}
+
+.code-box .content-box .return-home {
+  margin-top: 10%;
+  margin-right: 27%;
+}
+
+
+.code-box .content-box a {
+  background-color: rgb(18, 194, 185);
+  color: white;
+  font-size: 17px;
+  padding:4%;
+  border-radius: 7px;
+  text-decoration: none;
+}
 
 
 
