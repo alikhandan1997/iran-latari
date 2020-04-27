@@ -69,15 +69,37 @@
 
 })(jQuery);
 
-function submitForm(oFormElement)
-{
-    var xhr = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);
-        }
+function loadContest() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "http://iranlatari.com/api/captcha/", true);
+    xhttp.onload = function() {
+        var data = JSON.parse(this.response);
+        document.getElementById('captcha').src = `data:image/png;base64,${data.result.captcha_image}`;
     };
-    xhr.open("POST", "http://iranlatari.com/api/lottery/register", true);
-    xhr.send(new FormData(oFormElement));
-    return false;
+    xhttp.send();
+}
+
+function sendData() {
+    var id = window.location.href.split('?')[1];
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var instaId = document.getElementById("instaId").value;
+    var gender = document.getElementById("gender").value;
+    var captchaValue = document.getElementById("captchaValue").value;
+
+    var dataObj = {
+        name: name,
+        instagram_account: instaId,
+        mobile: phone,
+        gender: gender,
+        period: id,
+        code: captchaValue
+    };
+    console.log(dataObj);
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "http://iranlatari.com/api/lottery/register/", true);
+    xhttp.onload = function() {
+        var data = JSON.parse(this.response);
+    };
+    xhttp.send(dataObj);
 }

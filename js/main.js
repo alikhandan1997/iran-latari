@@ -1,23 +1,3 @@
-function openPage(){
-    window.open("landing/landing.html", "_self");
-}
-
-function openForm(){
-    window.open("register.html", "_self");
-}
-
-function loadDoc() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "http://iranlatari.com/api/lottery/status/", true);
-    xhttp.onload = function() {
-        var data = JSON.parse(this.response);
-        if(data.result == "False") {
-            window.open("../index.html", "_self");
-        }
-    };
-    xhttp.send();
-}
-
 function loadContest() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "http://iranlatari.com/api/lottery/", true);
@@ -44,7 +24,7 @@ function loadContest() {
                             <h4>جوایز مسابقه</h4>
                             <p>${data.result[i].awards.split('/').join('<br/>')}</p>
                             <div class="register">
-                                <a href="register.html">ثبت نام</a>
+                                <a href="register.html?${data.result[i].id}">ثبت نام</a>
                             </div>
                         </div>
                     </div>

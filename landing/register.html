@@ -28,37 +28,46 @@
 
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/fonts.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
-<body onload="loadDoc()">
+<body onload="loadContest()">
     <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins" dir="rtl">
         <div class="wrapper wrapper--w780">
             <div class="card card-3">
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">فرم ثبت نام</h2>
-                    <form method="POST" onsubmit="return submitForm(this);">
+                    <form method="POST" onsubmit="return false;">
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="نام و نام خانوادگی" name="name">
+                            <input id="name" class="input--style-3" type="text" placeholder="نام و نام خانوادگی">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="شماره موبایل" name="family">
+                            <input id="phone" class="input--style-3" type="text" placeholder="شماره موبایل">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="آیدی اینستاگرام" name="instaId">
+                            <input id="instaId" class="input--style-3" type="text" placeholder="آیدی اینستاگرام">
                         </div>
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="gender">
+                                <select id="gender">
                                     <option value="" disabled selected>جنسیت</option>
-                                    <option>مرد</option>
-                                    <option>زن</option>
+                                    <option value="0">مرد</option>
+                                    <option value="1">زن</option>
                                 </select>
                                 <div class="select-dropdown"></div>
                             </div>
                         </div>
+                        <div class="captcha" dir="ltr">
+                            <div class="captcha-box">
+                                <img id="captcha" src="" height="30" width="100"><span><i onclick="loadContest()" style="font-size:24px;cursor: pointer;" class="fa fa-rotate-left"></i></span>
+                                <input id="captchaValue" type="text">
+                            </div>
+                        </div>
                         <div class="p-t-10">
-                            <button class="btn btn--pill btn--green" type="submit">ثبت نام</button>
+                            <button onclick="sendData()" class="btn btn--pill btn--green" type="submit">ثبت نام</button>
                         </div>
                         <div id="demo"></div>
                     </form>

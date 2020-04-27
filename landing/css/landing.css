@@ -70,3 +70,25 @@ h2,h4,h5 {
     margin:10%;
   }
 }
+
+button.register {
+  background-color: rgb(19, 204, 179);
+  border: none;
+  color: white;
+  margin-left: 50%;
+  font-size: 20px;
+  padding: 1% 3%;
+  border-radius: 7px;
+}
+
+@media screen and (max-width:768px) {
+  button.register {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width:576px) {
+  button.register {
+    margin-left: 30%;
+  }
+}
