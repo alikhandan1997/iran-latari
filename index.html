@@ -10,17 +10,22 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <!-- main css -->
-        <link rel="stylesheet" href="css/contest.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/fonts.css" />
         <link rel="stylesheet" href="css/fonts.min.css" />
     </head>
-    <body onload="onLoad()">
+    <body onload="onLoad()" style="  background: url(img/home-banner.jpg);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;"
+    >
             
         <!--================Home Banner Area =================-->
-        <section class="home_banner_area">
+        <section class="contest_banner_area">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 col-md-6 col-sm-12">
                         <div class="row" id="js-element" dir="rtl">
                             <!-- content from main.js  -->
                         </div>
@@ -30,6 +35,6 @@
         </section>
         <!--================End Home Banner Area =================-->
 
-        <script src="../js/main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

@@ -6,9 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="images/logo.jpg" type="image/jpg">
-    <meta name="description" content="Colorlib Templates">
-    <meta name="author" content="Colorlib">
-    <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
     <title>Iran Latari</title>
@@ -24,7 +21,7 @@
     <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="css/register.css" rel="stylesheet" media="all">
+    <link href="css/style.css" rel="stylesheet" media="all">
 
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/fonts.min.css" />
@@ -33,13 +30,13 @@
     
 </head>
 
-<body onload="loadContest()">
+<body onload="loadContest()" style="margin:0;padding:0;">
     <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins" dir="rtl">
         <div class="wrapper wrapper--w780">
             <div class="card card-3">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title" id = 'form_title'>فرم ثبت نام</h2>
+                    <h2 class="title" id='form_title'>فرم ثبت نام</h2>
                     <form method="POST" onsubmit="return false;" id="form">
                         <div class="input-group">
                             <input id="name" class="input--style-3" type="text" placeholder="نام و نام خانوادگی">
@@ -51,7 +48,7 @@
                             <input id="instaId" class="input--style-3" type="text" placeholder="آیدی اینستاگرام">
                         </div>
                         <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
+                            <div class="select-gender">
                                 <select id="gender">
                                     <option value="" disabled selected>جنسیت</option>
                                     <option value="0">مرد</option>
@@ -83,7 +80,7 @@
                                 <a href="index.html">بازگشت به مسابقات</a>
                             </div>
                             <div class="return-home">
-                                <a href="../home-page.html">صفحه اصلی سایت</a>
+                                <a href="home-page.html">صفحه اصلی سایت</a>
                             </div>
                         </div>
                     </div>

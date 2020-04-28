@@ -472,14 +472,14 @@ button:focus {
   text-align: right;
 }
 
-.home_banner_area .banner_inner .banner_content .image-box img{
+.home_banner_area .banner_inner .banner_content .images-box img{
   border-radius: 7px;
   height: 550px;
   width: 250px;
 }
 
 @media screen and (max-width:992px) {
-  .home_banner_area .banner_inner .banner_content .image-box img {
+  .home_banner_area .banner_inner .banner_content .images-box img {
     margin-left: 30%;
     width: 300px;
     height: 600px;
@@ -487,13 +487,13 @@ button:focus {
 }
 
 @media screen and (max-width:768px) {
-  .home_banner_area .banner_inner .banner_content .image-box img {
+  .home_banner_area .banner_inner .banner_content .images-box img {
     margin-left: 25%;
   }
 }
 
 @media screen and (max-width:576px) {
-  .home_banner_area .banner_inner .banner_content .image-box img {
+  .home_banner_area .banner_inner .banner_content .images-box img {
     margin-left: 10%;
   }
 }
@@ -4071,3 +4071,586 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+/* 
+================================================================== 
+                      landing css
+==================================================================
+*/
+
+.landing_banner_area {
+  font-family: "BKoodakBold";
+  font-weight: 500;
+  font-size: 14px;
+  background: url(../img/home-banner.jpg);
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.landing_banner_area h2,h4,h5 {
+  text-align: right;
+}
+
+.landing_banner_area .banner_inner {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  padding: 30px 0px 30px 0px;
+}
+
+.landing_banner_area .banner_inner .banner_content {
+  color: #fff;
+}
+
+.landing_banner_area .banner_inner .banner_content .col-lg-7 {
+  vertical-align: middle;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.home_banner_area .banner_inner .banner_content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 3%;
+}
+
+.landing_banner_area .banner_inner .banner_content h4 {
+  font-weight: 600;
+  padding-bottom: 3%;
+}
+
+.landing_banner_area .banner_inner .banner_content h5 {
+  font-weight: 600;
+  padding-bottom: 3%;
+}
+
+@media screen and (max-width:768px) {
+  .landing_banner_area .banner_inner .banner_content h2 {
+    font-size: 30px;
+  }
+  .landing_banner_area .banner_inner .banner_content h4 {
+    font-size: 17px;
+  }
+  
+  .landing_banner_area .banner_inner .banner_content h5 {
+    font-size: 15px;
+  }
+}
+
+.landing_banner_area .banner_inner .banner_content .banner_map_img {
+  text-align: right;
+}
+
+@media screen and (max-width:576px) {
+  .landing_banner_area .banner_inner .banner_content .banner_map_img {
+    width: 80%;
+    margin:10%;
+  }
+}
+
+.landing_banner_area button.register {
+  background-color: rgb(19, 204, 179);
+  border: none;
+  color: white;
+  margin-left: 50%;
+  font-size: 20px;
+  padding: 1% 3%;
+  border-radius: 7px;
+}
+
+@media screen and (max-width:768px) {
+  .landing_banner_area button.register {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .landing_banner_area button.register {
+    margin-left: 30%;
+  }
+}
+
+.select-gender select {
+  border: none;
+  background-color: rgb(248, 247, 247);
+  width: 100%;
+  color: rgb(97, 96, 96);
+  font-family: "BKoodakBold";
+  font-size: 17px;
+}
+
+/* 
+================================================================== 
+                      register css
+==================================================================
+*/
+
+/* ==========================================================================
+   #FONT
+   ========================================================================== */
+   .font-robo {
+    font-family: "BKoodakBold";
+  }
+  
+  .font-poppins {
+    font-family: "BKoodakBold";
+  }
+  
+  /* ==========================================================================
+     #PAGE WRAPPER
+     ========================================================================== */
+  .page-wrapper {
+    min-height: 100vh;
+  }
+  
+  @media screen and (max-width:700px) {
+    .page-wrapper {
+      padding: 5%;
+    }
+  }
+  
+  /* ==========================================================================
+     #BACKGROUND
+     ========================================================================== */
+  .bg-blue {
+    background: #2c6ed5;
+  }
+  
+  .bg-red {
+    background: #fa4251;
+  }
+  
+  .bg-gra-01 {
+    background: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a18cd1));
+    background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+    background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+    background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+    background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+  }
+  
+  /* ==========================================================================
+     #SPACING
+     ========================================================================== */  
+  .p-t-180 {
+    padding-top: 20px;
+  }
+  
+  /* ==========================================================================
+     #WRAPPER
+     ========================================================================== */
+  .wrapper {
+    margin: 0 auto;
+  }
+  
+  .wrapper--w960 {
+    max-width: 960px;
+  }
+  
+  .wrapper--w780 {
+    max-width: 780px;
+  }
+  
+  @media screen and (max-width:768px){
+    .wrapper--w780 {
+      max-width: 400px;
+    }
+  }
+  
+  @media screen and (max-width:576px){
+    .wrapper--w780 {
+      max-width: 780px;
+    }
+  }
+  
+  .wrapper--w680 {
+    max-width: 680px;
+  }
+  
+  /* ==========================================================================
+     #BUTTON
+     ========================================================================== */
+  .btn {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 33px;
+    font-family: Poppins, "BKoodakBold";
+    cursor: pointer;
+    color: #fff;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 18px;
+    margin: 10% 30% 5% 0;
+  }
+  
+  @media screen and (max-width:768px) {
+    .btn {
+      margin-right: 40%;
+    }
+  }
+  
+  @media screen and (max-width:576px) {
+    .btn {
+      margin-right: 30%;
+    }
+  }
+  
+  .btn--radius {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  
+  .btn--pill {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+  }
+  
+  .btn--green {
+    background: #40a694;
+  }
+  
+  .btn--green:hover {
+    background: #40a694;
+  }
+
+  
+  /* ==========================================================================
+     #FORM
+     ========================================================================== */
+  .wrapper input {
+    outline: none;
+    margin: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+  }
+  
+  .wrapper .input-icon {
+    position: absolute;
+    font-size: 18px;
+    color: #ccc;
+    right: 8px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .wrapper .input-group {
+    position: relative;
+    margin-bottom: 33px;
+    border-bottom: 1px solid rgba(14, 13, 13, 0.2);
+  }
+  
+  .wrapper .input--style-3 {
+    padding: 5px 0;
+    font-size: 16px;
+    color:  rgb(95, 92, 92);
+    background: transparent;
+  }
+  
+  .wrapper .input--style-3::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: rgb(95, 92, 92);
+  }
+  
+  .wrapper .input--style-3:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color:  rgb(95, 92, 92);
+    opacity: 1;
+  }
+  
+  .wrapper .input--style-3::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color:  rgb(95, 92, 92);
+    opacity: 1;
+  }
+  
+  .wrapper .input--style-3:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color:  rgb(95, 92, 92);
+  }
+  
+  .wrapper .input--style-3:-ms-input-placeholder {
+    /* Microsoft Edge */
+    color:  rgb(95, 92, 92);
+  }
+  /* ==========================================================================
+     #CARD
+     ========================================================================== */
+  .card {
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff;
+  }
+  
+  .card-3 {
+    background: rgb(248, 247, 247);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    display: table;
+  }
+  
+  .card-3 .card-heading {
+    background: url(../img/iran-latari.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: table-cell;
+    width: 50%;
+  }
+  
+  .card-3 .card-body {
+    padding: 57px 65px;
+    padding-bottom: 65px;
+    display: table-cell;
+  }
+
+  @media (max-width: 767px) {
+    .card-3 {
+      display: block;
+    }
+    .card-3 .card-heading {
+      display: block;
+      width: 100%;
+      padding-top: 80%;
+      background-position: center center;
+    }
+    .card-3 .card-body {
+      display: block;
+      width: 80%;
+      padding: 37px 30px;
+      padding-bottom: 45px;
+    }
+  }
+  
+  .captcha img {
+    width: 45%;
+    height: 40px;
+    border: 1px solid rgb(204, 202, 202);
+    float: left;
+  }
+  
+  .captcha span {
+    margin: 2%;
+  }
+  
+  .captcha input {
+    width: 30%;
+    height: 15px;
+    border: 1px solid rgb(204, 202, 202);
+    float: right;
+    font-size: 17px;
+    padding: 5%;
+  }
+  .code-box {
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(207, 206, 206);
+    height: 300px;
+    margin-top: 10%;
+  }
+  
+  .code-box .content-box .detail h4 {
+    text-align: center;
+    padding-top: 15%;
+    color: black;
+  }
+  
+  .code-box .content-box .code {
+    text-align: center;
+    margin-top: 15%;
+    padding-top: 3%;
+    font-size: 20px;
+    background-color: rgb(216, 215, 215);
+    border-radius: 7px;
+    width: 80%;
+    margin-right: 10%;
+    height: 40px;
+  }
+  
+  .code-box .content-box .return-contest {
+    margin-top: 20%;
+    margin-right: 25%;
+  }
+
+  @media screen and (max-width:768px) {
+    .code-box .content-box .return-contest {
+      margin-top: 10%;
+      margin-right: 30%;
+    }
+  }
+
+  @media screen and (max-width:576px) {
+    .code-box .content-box .return-contest {
+      margin-top: 10%;
+      margin-right: 25%;
+    }
+  }
+  
+  .code-box .content-box .return-home {
+    margin-top: 6%;
+    margin-right: 27%;
+  }
+
+  @media screen and (max-width:768px) {
+    .code-box .content-box .return-home {
+      margin-top: 6%;
+      margin-right: 32%;
+    }
+  }
+
+  @media screen and (max-width:576px) {
+    .code-box .content-box .return-home {
+      margin-top: 6%;
+      margin-right: 27%;
+    }
+  }
+  
+  .code-box .content-box a {
+    background-color: rgb(18, 194, 185);
+    color: white;
+    font-size: 17px;
+    padding:4%;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+
+  #form_title {
+    color: black;
+    text-align: center;
+  }
+  
+/* 
+================================================================== 
+                      register css
+==================================================================
+*/
+
+.contest_banner_area {
+  font-family: "BKoodakBold";
+  font-weight: 500;
+  font-size: 14px;
+  padding-top: 3%;
+}
+
+.image-box {
+  position: relative;
+  width: 80%;
+}
+
+@media screen and (max-width:768px){
+  .image-box {
+      width: 70%;
+      margin-right: 15%;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .image-box {
+      width: 80%;
+      margin-right: 10%;
+  }
+}
+
+.image-box .content {
+  background-color: white;
+  padding: 5%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: black;
+}
+
+.image-box .content h5{
+  text-align: right;
+}
+
+.image-box .content p{
+  text-align: right;
+}
+
+.image-box .content .detail{
+  margin: 10% 0 10% 0;
+}
+
+.image-box .content .detail a{
+  background-color: rgb(18, 162, 187);
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 5% 5% 5% 5%;
+  margin-left: 30%;
+  border-radius: 7px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.image-box:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.image-box:active .overlay {
+  bottom: 0;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.text {
+  width: 70%;
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.register a {
+  color: white;
+  background-color: rgb(18, 162, 187);
+  padding: 5% 10% 5% 10%;
+  border-radius: 10px;
+}

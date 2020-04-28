@@ -24,7 +24,7 @@ function loadContest() {
             document.getElementById("js-element").innerHTML = `
             <div class="col-lg-4 col-sm-12 col-12">
                 <div class="image-box">
-                    <img src="images/logo.jpg" alt="Avatar" class="image">
+                    <img src="img/logo.jpg" alt="Avatar" class="image">
                     <div class="content">
                         <h5>${data.result[i].name}</h5>
                         <h5>مهلت ثبت نام</h5>
