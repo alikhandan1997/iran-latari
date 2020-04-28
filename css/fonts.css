@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'BAvini';
+  src: url('../fonts/BAvini.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
   font-family: 'BBadr';
   src: url('../fonts/BBadr.eot?#') format('eot'),  /* IE6–8 */
        url('../fonts/BBadr.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/

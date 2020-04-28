@@ -68,13 +68,13 @@ a:hover, a:focus {
 body {
   line-height: 24px;
   font-size: 14px;
-  font-family: "BKoodakBold";
+  font-family: "BAvini";
   font-weight: normal;
   color: #777777;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 button:focus {
@@ -141,7 +141,7 @@ button:focus {
   width: 30%;
   font-size: 45px;
   color: #222222;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 15px;
   margin-left: 30%;
   border-bottom: 1.5px solid rgb(175, 71, 71);
@@ -234,8 +234,8 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item .nav-link {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 500;
   text-transform: uppercase;
   color: #fff;
   padding: 20px 0 0 0;
@@ -362,7 +362,7 @@ button:focus {
 }
 
 .header_area .navbar .search i {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .header_area.navbar_fixed .main_menu {
@@ -642,7 +642,7 @@ button:focus {
 
 .l_news_item h4 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   color: #222222;
   line-height: 30px;
@@ -754,7 +754,7 @@ button:focus {
 .causes_item .causes_text h4 {
   color: #222222;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 15px;
   cursor: pointer;
 }
@@ -963,7 +963,7 @@ button:focus {
 .blog_info .blog_meta li a i {
   color: #222222;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   padding-left: 15px;
   line-height: 20px;
   vertical-align: middle;
@@ -985,7 +985,7 @@ button:focus {
   font-size: 24px;
   line-height: 36px;
   color: #222222;
-  font-weight: 600;
+  font-weight: 200;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -1316,7 +1316,7 @@ button:focus {
 }
 
 .blog-pagination .page-link .lnr {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .blog-pagination .page-item:last-child .page-link,
@@ -1381,7 +1381,7 @@ button:focus {
 
 .single-post-area .arrow .lnr {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .single-post-area .thumb .overlay-bg {
@@ -1553,7 +1553,7 @@ button:focus {
   padding: 2px 18px;
   font-size: 12px;
   display: block;
-  font-weight: 600;
+  font-weight: 500;
   -webkit-transition: all 300ms linear 0s;
   -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
@@ -1776,7 +1776,7 @@ button:focus {
   font-size: 20px;
   line-height: 24px;
   color: #6247ea;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .contact_info .info_item h6 {
@@ -2178,7 +2178,7 @@ button:focus {
 }
 
 .generic-content h1 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .about-generic-area {
@@ -3394,7 +3394,7 @@ h6 {
   text-align: center;
   color: #fff;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 50px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 10px 30px 0px rgba(115, 73, 251, 0.3);
@@ -3412,7 +3412,7 @@ h6 {
   padding: 0px 45px;
   color: #222222;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 48px;
   border-radius: 5px;
   outline: none !important;
@@ -3496,7 +3496,7 @@ h6 {
   display: inline-block;
   border-radius: 5px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   -webkit-transition: all 300ms linear 0s;
   -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
@@ -3577,7 +3577,7 @@ h6 {
 .feature_item h4 {
   color: #222222;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 15px;
   text-align: right;
 }
@@ -3609,7 +3609,7 @@ h6 {
 
 .interior_inner .interior_text h4 {
   color: #222222;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 45px;
   font-size: 50px;
   margin-top: -40px;
@@ -3649,7 +3649,7 @@ h6 {
 .app_inner h2 {
   color: #fff;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 18px;
 }
 
@@ -3720,7 +3720,7 @@ h6 {
   margin-bottom: 0px;
   color: #fff;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   -webkit-transition: all 300ms linear 0s;
   -o-transition: all 300ms linear 0s;
   transition: all 300ms linear 0s;
@@ -3979,12 +3979,14 @@ h6 {
 .footer-area .contact-info h2 {
   color: white;
   text-align: right;
+  font-size: 40px;
 }
 
 .footer-area .contact-info h4 {
   text-align: right;
   color: white;
   padding-top: 10%;
+  font-size: 25px;
 }
 
 .footer-area .contact-info h4 span {
@@ -3994,6 +3996,7 @@ h6 {
 .footer-area .more-help h2 {
   color: white;
   text-align: right;
+  font-size: 40px;
 }
 
 .footer-area .more-help ul {
@@ -4011,6 +4014,7 @@ h6 {
 
 .footer-area .more-help li a {
   color: white;
+  font-size: 20px;
 }
 
 .footer-area .subscribe {
@@ -4021,6 +4025,7 @@ h6 {
 .footer-area .subscribe label {
   font-size: 19px;
   padding-bottom: 5%;
+  font-size: 25px;
 }
 
 @media screen and (max-width:768px) {
@@ -4079,7 +4084,7 @@ h6 {
 */
 
 .landing_banner_area {
-  font-family: "BKoodakBold";
+  font-family: "BAvini";
   font-weight: 500;
   font-size: 14px;
   background: url(../img/home-banner.jpg);
@@ -4113,18 +4118,20 @@ h6 {
 
 .home_banner_area .banner_inner .banner_content h2 {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 3%;
 }
 
 .landing_banner_area .banner_inner .banner_content h4 {
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 3%;
+  font-size: 30px;
 }
 
 .landing_banner_area .banner_inner .banner_content h5 {
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 3%;
+  font-size: 25px;
 }
 
 @media screen and (max-width:768px) {
@@ -4178,7 +4185,7 @@ h6 {
   background-color: rgb(248, 247, 247);
   width: 100%;
   color: rgb(97, 96, 96);
-  font-family: "BKoodakBold";
+  font-family: "BAvini";
   font-size: 17px;
 }
 
@@ -4192,11 +4199,11 @@ h6 {
    #FONT
    ========================================================================== */
    .font-robo {
-    font-family: "BKoodakBold";
+    font-family: "BAvini";
   }
   
   .font-poppins {
-    font-family: "BKoodakBold";
+    font-family: "BAvini";
   }
   
   /* ==========================================================================
@@ -4276,7 +4283,7 @@ h6 {
     display: inline-block;
     line-height: 40px;
     padding: 0 33px;
-    font-family: Poppins, "BKoodakBold";
+    font-family: "BAvini";
     cursor: pointer;
     color: #fff;
     -webkit-transition: all 0.4s ease;
@@ -4430,10 +4437,7 @@ h6 {
       display: block;
     }
     .card-3 .card-heading {
-      display: block;
-      width: 100%;
-      padding-top: 80%;
-      background-position: center center;
+      display: none;
     }
     .card-3 .card-body {
       display: block;
@@ -4496,7 +4500,7 @@ h6 {
 
   @media screen and (max-width:768px) {
     .code-box .content-box .return-contest {
-      margin-top: 10%;
+      margin-top: 5%;
       margin-right: 30%;
     }
   }
@@ -4515,15 +4519,15 @@ h6 {
 
   @media screen and (max-width:768px) {
     .code-box .content-box .return-home {
-      margin-top: 6%;
+      margin-top: 10%;
       margin-right: 32%;
     }
   }
 
   @media screen and (max-width:576px) {
     .code-box .content-box .return-home {
-      margin-top: 6%;
-      margin-right: 27%;
+      margin-top: 10%;
+      margin-right: 26%;
     }
   }
   
@@ -4548,7 +4552,7 @@ h6 {
 */
 
 .contest_banner_area {
-  font-family: "BKoodakBold";
+  font-family: "BAvini";
   font-weight: 500;
   font-size: 14px;
   padding-top: 3%;
