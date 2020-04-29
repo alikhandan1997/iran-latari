@@ -41,28 +41,38 @@ function sendData() {
     xhttp.open("POST", "http://iranlatari.com/api/lottery/register/", true);
     xhttp.onload = function() {
         var data = JSON.parse(this.response);
-        for(var i=0; i<data.messages.length; i++) {
-            if(data.messages[i].field == "name"){
-                document.getElementById('name_Err').style.visibility = "visible";
-                document.getElementById('name_Err').innerHTML = data.messages[i].message;
+        console.log(data);
+        document.getElementById('name_Err').innerHTML = "";
+        document.getElementById('insta_Err').innerHTML = "";
+        document.getElementById('mobile_Err').innerHTML = "";
+        document.getElementById('captcha_Err').innerHTML = "";
+        if(data.status == 400) {
+            loadContest();
+            for(var i=0; i<data.messages.length; i++) {
+                if(data.messages[i].field == "name"){
+                    document.getElementById('name_Err').style.visibility = "visible";
+                    document.getElementById('name_Err').innerHTML = data.messages[i].message;
+                }
+                else if(data.messages[i].field == "instagram_account"){
+                    document.getElementById('insta_Err').style.visibility = "visible";
+                    document.getElementById('insta_Err').innerHTML = data.messages[i].message;
+                }
+                else if(data.messages[i].field == "mobile"){
+                    document.getElementById('mobile_Err').style.visibility = "visible";
+                    document.getElementById('mobile_Err').innerHTML = data.messages[i].message;
+                }
+                else if(data.messages[i].field == "captcha_value"){
+                    document.getElementById('captcha_Err').style.visibility = "visible";
+                    document.getElementById('captcha_Err').innerHTML = data.messages[i].message;
+                }
+    
             }
-            else if(data.messages[i].field == "instagram_account"){
-                document.getElementById('insta_Err').style.visibility = "visible";
-                document.getElementById('insta_Err').innerHTML = data.messages[i].message;
-            }
-            else if(data.messages[i].field == "mobile"){
-                document.getElementById('mobile_Err').style.visibility = "visible";
-                document.getElementById('mobile_Err').innerHTML = data.messages[i].message;
-            }
-            else if(data.messages[i].field == "captcha_value"){
-                document.getElementById('captcha_Err').style.visibility = "visible";
-                document.getElementById('captcha_Err').innerHTML = data.messages[i].message;
-            }
-
         }
 
-        if (data.success == true)
+        if (data.success == true){
             document.getElementById('code').innerHTML = data.result.code;
+            document.getElementById('header_title').innerHTML =" <h4>کد زیر را حتما به خاطر بسپارید</h4>";
+        }
         else
         {
             document.getElementById('code').innerHTML = "خطایی رخ داده است";
