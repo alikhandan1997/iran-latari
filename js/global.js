@@ -1,75 +1,3 @@
-(function ($) {
-    'use strict';
-    /*==================================================================
-        [ Daterangepicker ]*/
-    try {
-        $('.js-datepicker').daterangepicker({
-            "singleDatePicker": true,
-            "showDropdowns": true,
-            "autoUpdateInput": false,
-            locale: {
-                format: 'DD/MM/YYYY'
-            },
-        });
-    
-        var myCalendar = $('.js-datepicker');
-        var isClick = 0;
-    
-        $(window).on('click',function(){
-            isClick = 0;
-        });
-    
-        $(myCalendar).on('apply.daterangepicker',function(ev, picker){
-            isClick = 0;
-            $(this).val(picker.startDate.format('DD/MM/YYYY'));
-    
-        });
-    
-        $('.js-btn-calendar').on('click',function(e){
-            e.stopPropagation();
-    
-            if(isClick === 1) isClick = 0;
-            else if(isClick === 0) isClick = 1;
-    
-            if (isClick === 1) {
-                myCalendar.focus();
-            }
-        });
-    
-        $(myCalendar).on('click',function(e){
-            e.stopPropagation();
-            isClick = 1;
-        });
-    
-        $('.daterangepicker').on('click',function(e){
-            e.stopPropagation();
-        });
-    
-    
-    } catch(er) {console.log(er);}
-    /*[ Select 2 Config ]
-        ===========================================================*/
-    
-    try {
-        var selectSimple = $('.js-select-simple');
-    
-        selectSimple.each(function () {
-            var that = $(this);
-            var selectBox = that.find('select');
-            var selectDropdown = that.find('.select-dropdown');
-            selectBox.select2({
-                dropdownParent: selectDropdown
-            });
-        });
-    
-    } catch (err) {
-        console.log(err);
-    }
-    
-
-})(jQuery);
-
-
 var captchaKey;
 var code ;
 
@@ -84,15 +12,21 @@ function loadContest() {
     xhttp.send();
 }
 
+
 function sendData() {
+
     var id = window.location.href.split('?')[1];
     var captcha_key = captchaKey;
     var name = document.getElementById("name").value;
     var phone = document.getElementById("phone").value;
     var instaId = document.getElementById("instaId").value;
-    var gender = document.getElementById("gender").value;
+    gender = document.getElementById("gender").value;
     var captcha_value = document.getElementById("captchaValue").value;
 
+    if(gender == "") {
+        gender = 0;
+    }
+    
     var dataObj = `{
         "name": "${name}",
         "instagram_account": "${instaId}",
@@ -103,11 +37,30 @@ function sendData() {
         "captcha_value": "${captcha_value}"
     }`;
 
-    console.log(dataObj);
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", "http://iranlatari.com/api/lottery/register/", true);
     xhttp.onload = function() {
         var data = JSON.parse(this.response);
+        for(var i=0; i<data.messages.length; i++) {
+            if(data.messages[i].field == "name"){
+                document.getElementById('name_Err').style.visibility = "visible";
+                document.getElementById('name_Err').innerHTML = data.messages[i].message;
+            }
+            else if(data.messages[i].field == "instagram_account"){
+                document.getElementById('insta_Err').style.visibility = "visible";
+                document.getElementById('insta_Err').innerHTML = data.messages[i].message;
+            }
+            else if(data.messages[i].field == "mobile"){
+                document.getElementById('mobile_Err').style.visibility = "visible";
+                document.getElementById('mobile_Err').innerHTML = data.messages[i].message;
+            }
+            else if(data.messages[i].field == "captcha_value"){
+                document.getElementById('captcha_Err').style.visibility = "visible";
+                document.getElementById('captcha_Err').innerHTML = data.messages[i].message;
+            }
+
+        }
+
         if (data.success == true)
             document.getElementById('code').innerHTML = data.result.code;
         else
@@ -116,10 +69,13 @@ function sendData() {
             document.getElementById('header_title').innerHTML =" <h4>خطا در انجام عملیات</h4>";
             document.getElementById('code').innerHTML = "خطا در ثبت ";
         }
+        if(data.status == 201) {
+            document.getElementById('form').style.display = "none";
+            document.getElementById('code-box').style.display = "block";
+            document.getElementById('form_title').style.display = "none";
+        }
     };
+
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(dataObj);
-    document.getElementById('form').style.display = "none";
-    document.getElementById('code-box').style.display = "block";
-    document.getElementById('form_title').style.display = "none";
 }
