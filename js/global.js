@@ -71,12 +71,12 @@ function sendData() {
 
         if (data.success == true){
             document.getElementById('code').innerHTML = data.result.code;
-            document.getElementById('header_title').innerHTML =" <h4>کد زیر را حتما به خاطر بسپارید</h4>";
+            document.getElementById('header_title').innerHTML =" <h3>کد زیر را حتما به خاطر بسپارید</h3>";
         }
         else
         {
             document.getElementById('code').innerHTML = "خطایی رخ داده است";
-            document.getElementById('header_title').innerHTML =" <h4>خطا در انجام عملیات</h4>";
+            document.getElementById('header_title').innerHTML =" <h3>خطا در انجام عملیات</h3>";
             document.getElementById('code').innerHTML = "خطا در ثبت ";
         }
         if(data.status == 201) {
