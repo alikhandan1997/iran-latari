@@ -53,7 +53,6 @@ function sendData() {
     xhttp.open("POST", "http://iranlatari.com/api/lottery/register/", true);
     xhttp.onload = function() {
         var data = JSON.parse(this.response);
-        console.log(data);
         document.getElementById('name_Err').innerHTML = "";
         document.getElementById('insta_Err').innerHTML = "";
         document.getElementById('mobile_Err').innerHTML = "";
