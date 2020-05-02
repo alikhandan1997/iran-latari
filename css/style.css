@@ -4538,7 +4538,8 @@ h6 {
   .image-box {
       width: 70%;
       margin-right: 15%;
-      margin-top: 15%;
+      margin-top: 10%;
+      margin-bottom: 10%;
   }
 }
 
