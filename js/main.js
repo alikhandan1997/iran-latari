@@ -8,8 +8,8 @@ function statusPage() {
     xhttp.open("GET", "http://iranlatari.com/api/lottery/status/", true);
     xhttp.onload = function() {
         var data = JSON.parse(this.response);
-        if(data.result !== 'True') {
-            window.open("../home-page.html", "_self");
+        if(data.result == 'False') {
+            window.open("home-page.html", "_self");
         }
     };
     xhttp.send();
@@ -20,6 +20,7 @@ function loadContest() {
     xhttp.open("GET", "http://iranlatari.com/api/lottery/", true);
     xhttp.onload = function() {
         var data = JSON.parse(this.response);
+        console.log(data);
         if(data.result.length == 1){
             document.getElementById("js-element").innerHTML = `
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
