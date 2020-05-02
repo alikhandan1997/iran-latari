@@ -42,6 +42,8 @@ testContent = () => {
             `;
         } else {
             for(i=0; i<data.result.length; i++) {
+                var lottery_date = toFarsiNumber(data.result[i].lottery_date);
+                var registration_deadline = toFarsiNumber(data.result[i].registration_deadline);
                 document.getElementById("js-element").innerHTML += `
                 <div class="col-lg-4 col-sm-12 col-12">
                     <div class="image-box" onclick="display_content()">
@@ -49,9 +51,9 @@ testContent = () => {
                         <div class="content">
                             <h5>${data.result[i].name}</h5>
                             <h5>مهلت ثبت نام</h5>
-                            <p>${data.result[i].lottery_date}</p>
+                            <p>${lottery_date}</p>
                             <h5>تاریخ قرعه کشی</h5>
-                            <p>${data.result[i].registration_deadline}</p>
+                            <p>${registration_deadline}</p>
                             <div class="detail">
                                 <a>جزئیات مسابقه</a>
                             </div>
@@ -174,5 +176,12 @@ function display_content() {
         status = false;
     }, 5000);
     document.getElementById('overlay').style = " bottom: 0;height: 100%;border-radius: 10px;";
+}
+
+function toFarsiNumber(n) {
+    var farsiDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+    return n
+        .toString()
+        .replace(/\d/g, x => farsiDigits[x]);
 }
 
