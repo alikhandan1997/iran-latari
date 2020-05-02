@@ -20,7 +20,7 @@ function loadContest() {
     xhttp.open("GET", "http://iranlatari.com/api/lottery/", true);
     xhttp.onload = function() {
         var data = JSON.parse(this.response);
-        console.log(data);
+        console.log(data.result);
         if(data.result.length == 1){
             document.getElementById("js-element").innerHTML = `
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -50,7 +50,7 @@ function loadContest() {
             `;
         } else {
             for(i=0; i<data.result.length; i++) {
-                document.getElementById("js-element").innerHTML = `
+                document.getElementById("js-element").innerHTML += `
                 <div class="col-lg-4 col-sm-12 col-12">
                     <div class="image-box" onclick="display_content()">
                         <img src="img/logo.jpg" alt="Avatar" class="image">
