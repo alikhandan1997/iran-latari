@@ -17,7 +17,7 @@ testContent = () => {
             document.getElementById("js-element").innerHTML = `
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="image-box-one" onclick="display_content()">
-                    <img src="${data.result[0].images.length != 0 ? data.result[0].images[0].img : 'img/logo.jpg'}" alt="Avatar" class="image-one">
+                <img src="${data.result[0].images.length == 1 ? 'http://iranlatari.com/media/'+ data.result[0].images[0].img : 'img/logo.jpg'}" alt="Avatar" class="image">
                     <div class="content-one">
                         <h5>${data.result[0].name}</h5>
                         <h5>مهلت ثبت نام</h5>
