@@ -58,7 +58,6 @@ function sendData() {
         document.getElementById('mobile_Err').innerHTML = "";
         document.getElementById('captcha_Err').innerHTML = "";
         if(data.status == 400) {
-            loadContest();
             for(var i=0; i<data.messages.length; i++) {
                 if(data.messages[i].field == "name"){
                     document.getElementById('name_Err').style.visibility = "visible";
