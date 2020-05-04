@@ -3,6 +3,14 @@ function onLoad() {
     // loadContest();
     testContent();
     testStatus();
+    // loadPage();
+    setTimeout(loadPage, 3000)
+}
+
+loadPage = () => {
+    document.getElementById('main_box').style = "display:block;";
+    document.getElementById('loader').style = "display:none;";
+    console.log("functoin works");
 }
 
 testContent = () => {

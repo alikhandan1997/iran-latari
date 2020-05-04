@@ -1,17 +1,6 @@
 var captchaKey;
 var code ;
 
-// function loadContest() {
-//     var xhttp = new XMLHttpRequest();
-//     xhttp.open("POST", "http://iranlatari.com/api/captcha/", true);
-//     xhttp.onload = function() {
-//         var data = JSON.parse(this.response);
-//         captchaKey = data.result.captcha_key;
-//         document.getElementById('captcha').src = `data:image/png;base64,${data.result.captcha_image}`;
-//     };
-//     xhttp.send();
-// }
-
 loadCaptcha = () => {
     fetch('http://iranlatari.com/api/captcha/', {
     method: 'POST', // or 'PUT'
@@ -101,3 +90,14 @@ function sendData() {
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(dataObj);
 }
+
+// function loadContest() {
+//     var xhttp = new XMLHttpRequest();
+//     xhttp.open("POST", "http://iranlatari.com/api/captcha/", true);
+//     xhttp.onload = function() {
+//         var data = JSON.parse(this.response);
+//         captchaKey = data.result.captcha_key;
+//         document.getElementById('captcha').src = `data:image/png;base64,${data.result.captcha_image}`;
+//     };
+//     xhttp.send();
+// }
