@@ -53,11 +53,13 @@ function sendData() {
     xhttp.open("POST", "http://iranlatari.com/api/lottery/register/", true);
     xhttp.onload = function() {
         var data = JSON.parse(this.response);
+        console.log(data);
         document.getElementById('name_Err').innerHTML = "";
         document.getElementById('insta_Err').innerHTML = "";
         document.getElementById('mobile_Err').innerHTML = "";
         document.getElementById('captcha_Err').innerHTML = "";
         if(data.status == 400) {
+            loadCaptcha();
             for(var i=0; i<data.messages.length; i++) {
                 if(data.messages[i].field == "name"){
                     document.getElementById('name_Err').style.visibility = "visible";
