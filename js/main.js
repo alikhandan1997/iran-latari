@@ -9,6 +9,8 @@ function onLoad() {
 
 loadPage = () => {
     document.getElementById('main_box').style = "display:block;";
+    document.getElementById('header').style = "display:block;";
+    document.getElementById('footer').style = "display:block;";
     document.getElementById('loader').style = "display:none;";
     console.log("functoin works");
 }
