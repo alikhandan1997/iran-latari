@@ -108,6 +108,12 @@
                 display: none;
             }
 
+            @media screen and (max-width: 768px){
+                #header .nodis{
+                    display: none;
+                }
+            }
+
             #main_box {
                 display: none;
             }
@@ -131,13 +137,37 @@
                     margin:100px 0px 100px 10px;
                 }
             }
+
+            #about-us {
+                display: none;
+                padding-top: 40px;
+            }
+
+            #about-us .container {
+                background-color: white;
+                margin-bottom: -100px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+
+            .navbar-light .navbar-toggler{
+                color: white;
+                border-color: white;
+            }
+
+            @media screen and (max-width:768px){
+                .main_title {
+                    padding-right: 10%;
+                }
+            }
         </style>
     </head>
     <body onload="onLoad()" style="  background: url(img/home-banner.jpg);
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;"
+    background-size: cover;
+    scroll-behavior: smooth;"
     >
         <!--================Header Menu Area =================-->
         <header class="header_area" dir="rtl" id="header">
@@ -148,11 +178,14 @@
                         <a class="navbar-brand logo_h" href="home-page.html">ایران لاتاری</a>
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item active"><a class="nav-link" href="home-page.html">صفحه اصلی</a></li>
+                            <li class="nav-item nodis"><a class="nav-link" href="#about-us">درباره ما</a></li>
+                            <li class="nav-item nodis"><a class="nav-link" href="#footer">ارتباط با ما</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </header>
+        <!--================Header Menu Area =================-->
 
         <!--================Home Banner Area =================-->
         <section id="loader">
@@ -169,6 +202,7 @@
             </div>
         </section>
         <!--================End Home Banner Area =================-->
+
         <!--================Home Banner Area =================-->
         <section style="display: none;" id="main_box" class="contest_banner_area">
             <div class="container">
@@ -182,6 +216,24 @@
             </div>
         </section>
         <!--================End Home Banner Area =================-->
+
+<!--        <section>-->
+<!--            <button>kdjfjkf</button>-->
+<!--        </section>-->
+
+        <!--================Feature Area =================-->
+        <section class="screenshot_area" id="about-us">
+            <div class="container">
+                <div class="main_title" dir="rtl">
+                    <h2>درباره ایران لاتاری</h2>
+                    <p style="padding-bottom: 50px">ایران لاتاری در حال برگزاری دورهمی همراه با مسابقه و حضور کثیر چهره های مطرح کشور منجمله بازیگران، هنرمندان و اینفلوئنسر های محبوب است.<br>
+                        شرکت کنندگان در این دورهمی کافیست به پیج iran_latari@ در اینستاگرام مراجعه کنند و پیج مسابقه به همراه ۹۹ پیج فالو شده توسط صفحه مسابقه را دنبال کنند و آیدی خود را در سایت ایران لاتاری ثبت نام کنند و کد قرعه کشی را دریافت نمایند.<br>
+                        نکته جالب و حائز اهمیت اینکه این دورهمی بصورت لایو برگذار می شود که در هر قرعه کشی یکی از معروفترین هنرمندان حضور خواهد داشت و جوایز این دورهمی درکمتر از ۴۸ ساعت به برندگان اهدا می شود.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--================End Feature Area =================-->
 
         <!--================ start footer Area  =================-->
         <footer class="footer-area p_120" id="footer">
@@ -230,5 +282,20 @@
         <!--================ End footer Area  =================-->
 
         <script src="js/main.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/theme.js"></script>
     </body>
 </html>

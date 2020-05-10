@@ -11,6 +11,7 @@ loadPage = () => {
     document.getElementById('main_box').style = "display:block;";
     document.getElementById('header').style = "display:block;";
     document.getElementById('footer').style = "display:block;";
+    document.getElementById('about-us').style = "display:block;";
     document.getElementById('loader').style = "display:none;";
     console.log("functoin works");
 }
@@ -23,11 +24,12 @@ testContent = () => {
     }})
     .then(response => response.json())
     .then(data => {
+        console.log(data)
         if(data.result.length == 1){
             document.getElementById("js-element").innerHTML = `
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="image-box-one" onclick="display_content()">
-                <img src="${data.result[0].images.length == 1 ? 'http://iranlatari.com/media/'+ data.result[0].images[0].img : 'img/logo.jpg'}" alt="Avatar" class="image">
+                <img src="${data.result[0].images != "" ? 'http://iranlatari.com/media/'+ data.result[0].images.img : 'img/logo.jpg'}" alt="Avatar" class="image">
                     <div class="content-one">
                         <h5>${data.result[0].name}</h5>
                         <h5>مهلت ثبت نام</h5>
@@ -57,7 +59,7 @@ testContent = () => {
                 document.getElementById("js-element").innerHTML += `
                 <div class="col-lg-4 col-sm-12 col-12">
                     <div class="image-box" onclick="display_content()">
-                        <img src="${data.result[i].images.length == 1 ? 'http://iranlatari.com/media/'+ data.result[i].images[0].img : 'img/logo.jpg'}" alt="Avatar" class="image">
+                        <img src="${data.result[i].images != "" ? 'http://iranlatari.com/media/'+ data.result[i].images.img : 'img/logo.jpg'}" alt="Avatar" class="image">
                         <div class="content">
                             <h5>${data.result[i].name}</h5>
                             <h5>مهلت ثبت نام</h5>
