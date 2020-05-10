@@ -4644,8 +4644,9 @@ h6 {
 
 .image-box-one {
   position: relative;
-  width: 30%;
-  margin-right: 35%;
+  width: 22%;
+  margin-right: 40%;
+  margin-top: 10%;
 }
 
 @media screen and (max-width:768px){
