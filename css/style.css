@@ -4651,8 +4651,9 @@ h6 {
 
 @media screen and (max-width:768px){
   .image-box-one {
-      width: 70%;
-      margin-right: 15%;
+      width: 50%;
+      margin-right: 25%;
+      margin-top: 15%;
   }
 }
 
@@ -4660,6 +4661,7 @@ h6 {
   .image-box-one {
       width: 80%;
       margin-right: 10%;
+      margin-top: 25%;
   }
 }
 
