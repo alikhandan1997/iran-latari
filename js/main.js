@@ -33,9 +33,9 @@ testContent = () => {
                     <div class="content-one">
                         <h5>${data.result[0].name}</h5>
                         <h5>مهلت ثبت نام</h5>
-                        <p>${data.result[0].lottery_date}</p>
-                        <h5>تاریخ قرعه کشی</h5>
                         <p>${data.result[0].registration_deadline}</p>
+                        <h5>تاریخ قرعه کشی</h5>
+                        <p>${data.result[0].lottery_date}</p>
                         <div class="detail-one">
                             <a>جزئیات مسابقه</a>
                         </div>
@@ -63,9 +63,9 @@ testContent = () => {
                         <div class="content">
                             <h5>${data.result[i].name}</h5>
                             <h5>مهلت ثبت نام</h5>
-                            <p>${lottery_date}</p>
-                            <h5>تاریخ قرعه کشی</h5>
                             <p>${registration_deadline}</p>
+                            <h5>تاریخ قرعه کشی</h5>
+                            <p>${lottery_date}</p>
                             <div class="detail">
                                 <a>جزئیات مسابقه</a>
                             </div>
