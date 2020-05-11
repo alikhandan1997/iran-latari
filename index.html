@@ -108,7 +108,7 @@
                 display: none;
             }
 
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 991px){
                 #header .nodis{
                     display: none;
                 }
@@ -160,6 +160,15 @@
                     padding-right: 10%;
                 }
             }
+
+            @media screen and (max-width:991px) and (min-width:768px) {
+                .contest_box {
+                    margin-top: 10%;
+                margin-left: 35%;}
+                    .contest_box .image-box-one {
+                        width: 230px;
+                    }
+            }
         </style>
     </head>
     <body onload="onLoad()" style="  background: url(img/home-banner.jpg);
@@ -173,7 +182,7 @@
         <header class="header_area" dir="rtl" id="header">
             <div class="main_menu" id="mainNav">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container">
+                    <div class="container">zz
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <a class="navbar-brand logo_h" href="home-page.html">ایران لاتاری</a>
                         <ul class="nav navbar-nav menu_nav ml-auto">
@@ -207,7 +216,7 @@
         <section style="display: none;" id="main_box" class="contest_banner_area">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 col-md-6 col-sm-12" dir="rtl">
+                    <div class="col-lg-12 col-md-6 col-sm-12 contest_box" dir="rtl">
                         <div class="row" id="js-element">
                             <!-- content from main.js  -->
                         </div>
