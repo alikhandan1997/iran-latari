@@ -33,17 +33,17 @@ testContent = () => {
                     <div class="content-one">
                         <h5>${data.result[0].name}</h5>
                         <h5>مهلت ثبت نام</h5>
-                        <p>${data.result[0].registration_deadline}</p>
+                        <p dir="ltr">${data.result[0].registration_deadline}</p>
                         <h5>تاریخ قرعه کشی</h5>
-                        <p>${data.result[0].lottery_date}</p>
+                        <p dir="ltr">${data.result[0].lottery_date}</p>
                         <div class="detail-one">
                             <a>جزئیات مسابقه</a>
                         </div>
                     </div>
                     <div class="overlay-one" id="overlay">
                         <div class="text-one">
-                            <h4>جوایز مسابقه</h4>
-                            <p>${data.result[0].awards.split('/').join('<br/>')}</p>
+                            <h4>جوایز مسابقه</h4><br/>
+                            <p>${data.result[0].awards.split('/').join('<br/><br/>')}</p>
                             <div class="register-one">
                                 <a href="register.html?${data.result[0].id}">ثبت نام</a>
                             </div>

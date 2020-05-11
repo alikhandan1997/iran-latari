@@ -4679,8 +4679,8 @@ h6 {
 }
 
 .image-box-one .content-one p{
-  text-align: right;
-  font-size: 20px;
+  text-align: center;
+  font-size: 35px;
 }
 
 .image-box-one .content-one .detail-one{
@@ -4738,7 +4738,7 @@ h6 {
 
 .overlay-one .text-one h4 {
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .register-one {
