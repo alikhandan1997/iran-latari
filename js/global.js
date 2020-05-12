@@ -1,6 +1,30 @@
 var captchaKey;
 var code ;
 
+onLoad = () => {
+    getImage();
+    loadCaptcha();
+}
+
+getImage = () => {
+    fetch('http://iranlatari.com/api/lottery/', {
+    method: 'GET', // or 'PUT'
+    headers: {
+        'Content-Type': 'application/json',
+    }})
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        var id = window.location.href.split('?')[1];
+        for(i=0; i<data.result.length; i++) {
+            if(data.result[i].id == id){
+                console.log(data.result[i].images.img);
+                document.getElementById('card-heading').style = `background:url(http://iranlatari.com/media/${data.result[i].images.img}) no-repeat center;background-size: 80% 50%;background-color:#F8F7F7;border-left:1px solid #e5e5e5;`;
+            }
+        }
+    });
+}
+
 loadCaptcha = () => {
     fetch('http://iranlatari.com/api/captcha/', {
     method: 'POST', // or 'PUT'
