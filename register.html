@@ -18,13 +18,35 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <style>
+        #return {
+            background-color: #40A694;
+            color: white;
+            font-size: 20px;
+            padding: 2% 12%;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width:576px) {
+            #return {
+                margin-top: 15%;
+                margin-right: 30%;
+                display: block;
+                width: 15%;
+                padding: 3% 13%;
+            }
+        }
+
+    </style>
+
 </head>
 
-<body onload="loadCaptcha()" style="margin:0;padding:0;">
+<body onload="onLoad()" style="margin:0;padding:0;">
     <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins" dir="rtl">
         <div class="wrapper wrapper--w780">
             <div class="card card-3">
-                <div class="card-heading"></div>
+                <div class="card-heading" id="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title" id='form_title'>فرم ثبت نام</h2>
                     <form method="POST" onsubmit="return false;" id="form">
@@ -58,6 +80,7 @@
                         <p id="captcha_Err">dfkjdkj</p>
                         <div class="p-t-10">
                             <button onclick="sendData()" class="btn btn--pill btn--green" type="submit">ثبت نام</button>
+                            <a href="index.html" id="return">بازگشت</a>
                         </div>
                         <div id="demo"></div>
                     </form>
@@ -82,6 +105,7 @@
     </div>
 
     <!-- Main JS-->
+
     <script src="js/global.js"></script>
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->

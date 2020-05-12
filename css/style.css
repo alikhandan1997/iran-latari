@@ -4248,12 +4248,13 @@ h6 {
     -moz-transition: all 0.4s ease;
     transition: all 0.4s ease;
     font-size: 18px;
-    margin: 5% 30% -5% 0;
+    margin: 5% 10% -5% 0;
   }
+  
   
   @media screen and (max-width:768px) {
     .btn {
-      margin-right: 35%;
+      margin-right: 15%;
     }
   }
   
@@ -4376,9 +4377,6 @@ h6 {
   }
   
   .card-3 .card-heading {
-    background: url(../img/iran-latari.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     display: table-cell;
     width: 50%;
   }
