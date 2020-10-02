@@ -19,7 +19,7 @@ getImage = () => {
         for(i=0; i<data.result.length; i++) {
             if(data.result[i].id == id){
                 console.log(data.result[i].images.img);
-                document.getElementById('card-heading').style = `background:url(http://iranlatari.com/media/${data.result[i].images.img}) no-repeat center;background-size: 80% 50%;background-color:#F8F7F7;border-left:1px solid #e5e5e5;`;
+                document.getElementById('card-heading').style = `background:url(http://iranlatari.com/media/${data.result[i].images[0].img}) no-repeat center;background-size: 80% 50%;background-color:#F8F7F7;border-left:1px solid #e5e5e5;`;
             }
         }
     });
