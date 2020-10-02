@@ -7,6 +7,8 @@ function onLoad() {
     setTimeout(loadPage, 3000)
 }
 
+// function for display content after 3 seconds loading
+
 loadPage = () => {
     document.getElementById('main_box').style = "display:block;";
     document.getElementById('header').style = "display:block;";
@@ -15,6 +17,8 @@ loadPage = () => {
     document.getElementById('loader').style = "display:none;";
     console.log("functoin works");
 }
+
+// function for getting contest data and if there is one contest change the bootstrap to set it in center and if there is more set it in three part
 
 testContent = () => {
     fetch('http://iranlatari.com/api/lottery/', {
@@ -87,6 +91,8 @@ testContent = () => {
     });
 }
 
+// function for checking if there is any contest or not if not go to home page
+
 testStatus = () => {
     fetch('http://iranlatari.com/api/lottery/status/', {
     method: 'GET', // or 'PUT'
@@ -100,12 +106,16 @@ testStatus = () => {
         }});
 }
 
+// function for close the open layer for register button in mobile size after 5 seconds because hover problem
+
 display_content = () => {
     setTimeout(function(){ 
         document.getElementById('overlay').style = "bottom: 100%;left: 0;right: 0;width: 100%;height:0;transition: .5s ease;";
     }, 5000);
     document.getElementById('overlay').style = " bottom: 0;height: 100%;border-radius: 10px;";
 };
+
+// function for changing english number to farsi
 
 toFarsiNumber = (n) => {
     var farsiDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];

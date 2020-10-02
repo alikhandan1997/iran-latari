@@ -6,6 +6,8 @@ onLoad = () => {
     loadCaptcha();
 }
 
+// function for getting image for the register form and put it next to the form
+
 getImage = () => {
     fetch('http://iranlatari.com/api/lottery/', {
     method: 'GET', // or 'PUT'
@@ -25,6 +27,8 @@ getImage = () => {
     });
 }
 
+//funtion for getting the captcha and set it as an image
+
 loadCaptcha = () => {
     fetch('http://iranlatari.com/api/captcha/', {
     method: 'POST', // or 'PUT'
@@ -37,6 +41,21 @@ loadCaptcha = () => {
         document.getElementById('captcha').src = `data:image/png;base64,${data.result.captcha_image}`;
     });
 }
+
+/* 
+    function for sending form data to the api
+
+    inputs:
+        name: string
+        instagram account: string
+        mobile: number
+        gender: number
+        period: number
+        captcha key: number
+        captcha value: number
+
+    if error accured refrsh captcha and set error under each filed
+*/
 
 function sendData() {
 
