@@ -139,6 +139,7 @@ button:focus {
   .main_title h2 {
     text-align: center;
     width: 80%;
+    margin-right: 10%;
   }
 }
 
